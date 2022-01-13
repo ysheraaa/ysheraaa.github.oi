@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title web -->
+    <title>Yoseu Herawati</title>
+
+    <!-- Link css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- link font -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/yh-logos_transparent.png" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="">Tentang</a>
+                    </li>
+                    <li>
+                        <a href="">Blog</a>
+                    </li>
+                    <li>
+                        <a href="">Kontak</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="user">
+                <p>Hwang Hyunjin</p>
+                <img src="images/userhj.png">
+            </div>
+        </div>
+        <div class="sidebar">
+            <img src="images/search.png" class="search-icon">
+            <div class="social-links">
+                <img src="images/fb.png">
+                <img src="images/pt.png">
+                <img src="images/tw.png">
+            </div>
+            <img src="images/info.png" class="info-icon">
+        </div>
+        <div class="msg-container">
+            <div id="slider">
+                <div class="msg-col">
+                    <h1>Perkenalan</h1>
+                    <p>Perkenalkan nama saya Yoseu Herawati, saya lahir di Jakarta, 18 Oktober 2000. Saya adalah anak kedua dari dua bersaudara. Saya memiliki kegemaran mendengarkan musik, musik yang saya senangi bergenre korean r&b.</p>
+                    <a href="">Learn More</a>
+                </div>
+                <div class="msg-col">
+                    <h1>Pendidikan</h1>
+                    <p>Saya sedang menempuh pendidikan S1 di Universitas Gunadarma jurusan Sistem Informasi sejak tahun 2019. Oktober 2021, Saya sudah semester 5 dan berada di tingkat 3. Selama perkuliahan saya menyukai kegiatan mendesain seperti halnya
+                        UI/UX design.
+                    </p>
+                    <a href="">Learn More</a>
+                </div>
+                <div class="msg-col">
+                    <h1>Alamat</h1>
+                    <p>Sejak lahir saya tinggal di Komplek Fatmawati, Jakarta Selatan. Lalu saat saya berumur 3 tahun, Keluarga saya pindah ke Jalan Talas 4 Pondok cabe ilir, Tangerang selatan, Provinsi Banten.</p>
+                    <a href="">Learn More</a>
+                </div>
+                <div class="msg-col">
+                    <h1>Pengalaman</h1>
+                    <p>Sejak perkuliahan dan terjadi pandemi COVID-19, saya terus berusaha mengembangkan potensi diri saya. Pada Meret 2021, saya mengikuti bootcamp yang diselenggarakan Progate yaitu HTML & CSS. Pada Juli 2021, saya mengikuti bootcamp Node.js,
+                        Command line, Java, Git, Python. Agustus 2021, Saya menjadi member GDSC Universita Gunadarma.
+                    </p>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="controller">
+            <div id="line1"></div>
+            <div id="line2"></div>
+            <div id="line3"></div>
+            <div id="line4"></div>
+            <div id="active"></div>
+        </div>
+    </div>
+
+    <script>
+        var slider = document.getElementById('slider');
+        var active = document.getElementById('active');
+        var line1 = document.getElementById('line1');
+        var line2 = document.getElementById('line2');
+        var line3 = document.getElementById('line3');
+        var line4 = document.getElementById('line4');
+
+
+        line1.onclick = function() {
+            slider.style.transform = 'translateX(0)';
+            active.style.top = '0px';
+        }
+        line2.onclick = function() {
+            slider.style.transform = 'translateX(-25%)';
+            active.style.top = '80px';
+        }
+        line3.onclick = function() {
+            slider.style.transform = 'translateX(-50%)';
+            active.style.top = '160px';
+        }
+        line4.onclick = function() {
+            slider.style.transform = 'translateX(-75%)';
+            active.style.top = '240px';
+        }
+    </script>
+
+
+
+</body>
+
+</html>
